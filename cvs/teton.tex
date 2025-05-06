@@ -11,7 +11,8 @@
 %----------------------------------------------------------------------------------------
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvstyle{classic}
-\moderncvcolor{blue}
+\moderncvcolor{black}
+\definecolor{firstnamecolor}{rgb}{0,0,0}
 
 % Basic packages
 \usepackage[utf8]{inputenc}
@@ -36,28 +37,25 @@
 \makecvtitle
 
 \section*{Introduction}
-Dear \company{} team, I am a technically minded Data Scientist with 6 years of experience delivering production ML systems in healthcare, manufacturing, and IoT. I have built low-latency APIs, worked with regulatory constraints, and developed a full CV pipeline as a solo side project. I am excited to contribute to your fast-paced vision team with a strong ML toolkit, solid engineering practices, and a creative mindset.
+Dear \company{} team, I am a technically minded Data Scientist with 6 years of experience delivering production ML systems in healthcare and other industries. I have built low-latency APIs, developed AI models in heavily regulated industries, and developed a full CV pipeline as a solo side project. I am excited to contribute to your team with a strong ML toolkit, solid engineering practices, and a creative mindset.
 
 % Include modular sections
 \section{Selected Work Experience}
 \input{../sections/work_experience/valcon/summary.tex}
 \input{../sections/work_experience/raysearch/summary.tex}
-% \input{../sections/work_experience/valtech/summary.tex}
 
 \input{../sections/education.tex}
 \input{../sections/other/iris/summary.tex}
-\input{../sections/skills.tex}
 \input{../sections/other.tex}
 
 \newpage
 \section{Detailed Work Experience}
-\input{../sections/work_experience/valcon/detailed.tex}
 \input{../sections/work_experience/signum/detailed.tex}
+\input{../sections/work_experience/valcon/detailed.tex}
+\input{../sections/work_experience/valtech/detailed.tex}
 \input{../sections/work_experience/raysearch/detailed.tex}
-% \input{../sections/work_experience/valtech/detailed.tex}
 
-\section{Other Experience}
+\section{Other Detailed Experience}
 \input{../sections/other/iris/detailed.tex}
-
 
 \end{document}
