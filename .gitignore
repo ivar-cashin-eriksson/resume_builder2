@@ -1,0 +1,17 @@
+# Sensitive information
+personal_info.tex
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
