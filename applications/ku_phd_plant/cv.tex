@@ -1,0 +1,71 @@
+% %--------------------------
+% %	CONFIGURATION
+% %--------------------------
+\newcommand{\position}{AI Research Scientist}
+\newcommand{\company}{KU}
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\definecolor{firstnamecolor}{rgb}{0,0,0}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.85]{geometry}
+
+\usepackage{microtype} % For better typography
+
+% Configure font settings
+\renewcommand{\rmdefault}{ppl} % Use Palatino font
+\renewcommand{\sfdefault}{phv} % Use Helvetica font for sans-serif text
+\renewcommand*{\namefont}{\fontsize{26}{18}\mdseries}
+
+% Configure microtype
+\microtypesetup{expansion=false}
+
+% Load sensitive information
+\input{../../personal_info.tex}
+
+% %--------------------------
+
+\begin{document}
+\makecvtitle
+
+\section*{Introduction}
+Dear Stefan Sommer, I am an ambitious and self-driven Data Scientist with 6 years of experience applying machine learning across many industries. I have a strong mathematical and ML background, solid engineering practices in PyTorch and Python, and a track record of building robust, production-ready systems. With prior research experience and a passion for scientific inquiry, I am eager to contribute to your team.
+
+% Include modular sections
+\input{../../sections/education/summary.tex}
+
+\section{Selected Work Experience}
+\large{Data Science Researcher @ RaySearch Laboratories}
+
+\normalsize
+\begin{itemize}
+    \item Designed a \textbf{3D computer-vision} pipeline for automated cancer treatment planning.
+    \item Built lexicographic dose-optimisation for palliative care. Continuously validated with clinicians.
+\end{itemize}
+
+{\footnotesize\textit{Keywords: Computer vision, probabilistic modelling, latent representation, segmentation, autoencoders, optimisation}}
+
+\hfill{\small{\textit{\hyperref[sec:raysearch]{Read more…}}}}
+
+% Two blank spaces for break between sections
+
+\input{../../sections/work_experience/valcon/summary.tex}
+
+\input{../../sections/other/iris/summary.tex}
+\input{../../sections/other/other.tex}
+
+\newpage
+\section{Detailed Work Experience}
+\input{../../sections/work_experience/signum/detailed.tex}
+\input{../../sections/work_experience/valcon/detailed.tex}
+\input{../../sections/work_experience/valtech/detailed.tex}
+\input{../../sections/work_experience/raysearch/detailed.tex}
+
+\section{Other Detailed Experience}
+\input{../../sections/other/iris/detailed.tex}
+
+\end{document}

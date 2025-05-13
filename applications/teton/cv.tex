@@ -1,0 +1,56 @@
+% %--------------------------
+% %	CONFIGURATION
+% %--------------------------
+\newcommand{\position}{AI Research Scientist}
+\newcommand{\company}{Teton.ai}
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\definecolor{firstnamecolor}{rgb}{0,0,0}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.85]{geometry}
+
+\usepackage{microtype} % For better typography
+
+% Configure font settings
+\renewcommand{\rmdefault}{ppl} % Use Palatino font
+\renewcommand{\sfdefault}{phv} % Use Helvetica font for sans-serif text
+
+% Configure microtype
+\microtypesetup{expansion=false}
+
+% Load sensitive information
+\input{../../personal_info.tex}
+
+%----------------------------
+
+\begin{document}
+\makecvtitle
+
+\section*{Introduction}
+Dear \company{} team, I am a curious and resourceful Data Scientist with 6 years of experience delivering ML systems in healthcare and other industries. I have built real-time ML APIs, developed AI models in heavily regulated industries, and developed a full CV pipeline as a solo side project. I am excited to contribute to your team with a strong ML toolkit, solid engineering practices, and a creative mindset.
+
+% Include modular sections
+\section{Selected Work Experience}
+\input{../../sections/work_experience/valcon/summary.tex}
+\input{../../sections/work_experience/raysearch/summary.tex}
+
+\input{../../sections/education/summary.tex}
+\input{../../sections/other/iris/summary.tex}
+\input{../../sections/other/other.tex}
+
+\newpage
+\section{Detailed Work Experience}
+\input{../../sections/work_experience/signum/detailed.tex}
+\input{../../sections/work_experience/valcon/detailed.tex}
+\input{../../sections/work_experience/valtech/detailed.tex}
+\input{../../sections/work_experience/raysearch/detailed.tex}
+
+\section{Other Detailed Experience}
+\input{../../sections/other/iris/detailed.tex}
+
+\end{document}
