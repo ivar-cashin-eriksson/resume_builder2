@@ -6,7 +6,6 @@ personal_info.tex
 *.log
 *.out
 *.synctex.gz
-*.pdf
 
 # OS files
 .DS_Store
