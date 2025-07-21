@@ -1,0 +1,50 @@
+% %--------------------------
+% %   CONFIGURATION
+% %--------------------------
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\definecolor{firstnamecolor}{rgb}{0,0,0}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.7]{geometry}
+\usepackage{microtype}
+
+% Configure font settings
+\renewcommand{\rmdefault}{ppl}
+\renewcommand{\sfdefault}{phv}
+\renewcommand*{\namefont}{\fontsize{26}{18}\mdseries}
+
+% Configure microtype
+\microtypesetup{expansion=false}
+
+% Load contact information
+\input{../../personal_info.tex}
+
+% %--------------------------
+
+\begin{document}
+\recipient{}{}
+\date{}
+\title{Research Statement}
+\makecvtitle
+I am interested in exploring how sparse and interpretable internal representations emerge in large language models, and how such representations can be used to better understand and control model behaviour.
+
+\hspace*{2em}
+In earlier work, I used autoencoders to extract low-dimensional anatomical features from 3D medical images in order to build distance metrics between human anatomy. These would then be used in the design of automatic radiotherapy planning tools. In addition, I have used autoencoders to extract latent representations from invoicing agreements in order to be able to use them for downstream classification tasks, and to enable transfer learning between invoices based on different agreements. It has always been difficult to \textit{know} that the latent representations contain the type of information I have wished it did. Because of this, when models have not behaved as expected, they have been exceedingly difficult to debug. This sparked an ongoing interest in how meaningful latent structure arises in deep models and how that structure might be made more transparent and actionable. I would be excited to pursue similar questions in the context of natural language processing, particularly in relation to concept bottleneck models and sparse probing techniques.
+
+\hspace*{2em}
+One possible direction would be to investigate whether sparse concept representations, discovered from model internals or guided by weak supervision, can act as useful intermediate decision layers in NLP models. This could involve identifying interpretable dimensions in pre-trained models, enforcing sparsity constraints to disentangle them, or evaluating how faithful such concept representations are to the model's actual reasoning. I am especially interested in methods of unsupervised structure discovery.
+
+\hspace*{2em}
+This is just one idea, and I am very open to refining it or exploring other directions depending on the needs and interests of the research group. My main goal is to contribute meaningfully to a longer-term research agenda focused on interpretability and structured understanding in NLP.
+
+\vspace{6mm}
+Thank you for considering my application.
+
+\vspace{3mm}
+Ivar Cashin Eriksson
+
+\end{document}

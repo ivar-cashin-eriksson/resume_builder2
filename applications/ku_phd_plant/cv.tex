@@ -1,9 +1,6 @@
 % %--------------------------
 % %	CONFIGURATION
 % %--------------------------
-\newcommand{\position}{AI Research Scientist}
-\newcommand{\company}{KU}
-
 \documentclass[11pt,a4paper]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{black}
@@ -13,6 +10,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[scale=0.85]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{DarkBlue}{RGB}{0, 0, 150} % or tweak as needed
+\usepackage[colorlinks=true, urlcolor=DarkBlue, linkcolor=DarkBlue]{hyperref}
 
 \usepackage{microtype} % For better typography
 
@@ -33,7 +33,7 @@
 \makecvtitle
 
 \section*{Introduction}
-Dear Stefan Sommer, I am an ambitious and self-driven Data Scientist with 6 years of experience applying machine learning across many industries. I have a strong mathematical and ML background, solid engineering practices in PyTorch and Python, and a track record of building robust, production-ready systems. With prior research experience and a passion for scientific inquiry, I am eager to contribute to your team.
+I am an ambitious and self-driven Data Scientist with 6 years of experience applying machine learning across many industries. I have a strong mathematical and ML background, solid engineering practices in PyTorch and Python, and a track record of building robust, production-ready systems. With prior research experience and a passion for scientific inquiry, I am eager to contribute to your team.
 
 % Include modular sections
 \input{../../sections/education/summary.tex}
