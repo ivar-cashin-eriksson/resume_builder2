@@ -1,0 +1,58 @@
+% %--------------------------
+% %	CONFIGURATION
+% %--------------------------
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\definecolor{firstnamecolor}{rgb}{0,0,0}
+
+% Basic packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{DarkBlue}{RGB}{0, 0, 150} % or tweak as needed
+\usepackage[colorlinks=true, urlcolor=DarkBlue, linkcolor=DarkBlue]{hyperref}
+
+\usepackage{microtype} % For better typography
+
+% Configure font settings
+\renewcommand{\rmdefault}{ppl} % Use Palatino font
+\renewcommand{\sfdefault}{phv} % Use Helvetica font for sans-serif text
+\renewcommand*{\namefont}{\fontsize{26}{18}\mdseries}
+
+% Configure microtype
+\microtypesetup{expansion=false}
+
+% Load sensitive information
+\input{../../personal_info.tex}
+
+% %--------------------------
+
+\begin{document}
+\makecvtitle
+
+\section*{Introduction}
+I am an ambitious Data Scientist with 6 years of experience applying ML across finance, healthcare, manufacturing, e-commerce and more. I have done AI research, consultancy, and built real-time ML inference pipelines. I am excited to further my learning, and to take the next step in my career.
+
+% Include modular sections
+
+\section{Selected Work Experience}
+\input{../../sections/work_experience/signum/summary.tex}
+\input{../../sections/work_experience/valcon/summary.tex}
+
+\input{../../sections/education/summary.tex}
+\input{../../sections/other/iris/summary.tex}
+\input{../../sections/other/other.tex}
+
+\newpage
+\section{Detailed Work Experience}
+\input{../../sections/work_experience/signum/detailed.tex}
+\input{../../sections/work_experience/valcon/detailed.tex}
+\input{../../sections/work_experience/valtech/detailed.tex}
+\input{../../sections/work_experience/raysearch/detailed.tex}
+
+\section{Other Detailed Experience}
+\input{../../sections/other/iris/detailed.tex}
+
+\end{document}
